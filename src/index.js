@@ -1,15 +1,10 @@
-import _ from 'lodash'
-import print from './print'
+import {square} from './math'
+// import './css/style.css'
 
 function render () {
   var element = document.createElement('div')
-  element.innerHTML = _.join(['hello', 'webpack'], ' ')
+  element.innerHTML = ['hello webpack', 'square(5) = ' + square(5)].join('\r\n')
   document.body.appendChild(element)
-
-  var btn = document.createElement('button')
-  btn.innerHTML = 'click me'
-  btn.onclick = print
-  document.body.appendChild(btn)
 }
 
 render()
