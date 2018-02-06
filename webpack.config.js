@@ -11,6 +11,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'inline-source-map',
+  devServer: {
+    host: '0.0.0.0',
+    port: 8080,
+    disableHostCheck: true,
+    overlay: true
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
