@@ -1,0 +1,15 @@
+{
+  "name": "webpack-study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test1": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
+}
