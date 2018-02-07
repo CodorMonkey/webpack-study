@@ -1,6 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -11,16 +10,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      }
-    ]
+    rules: []
   },
   plugins: [
-    // 清理dist目录
-    new CleanWebpackPlugin(['dist']),
     // html模板插件
     new HtmlWebpackPlugin({
       title: 'index',

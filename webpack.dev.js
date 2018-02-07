@@ -4,6 +4,14 @@ const common = require('./webpack.common')
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  },
   devServer: {
     host: '0.0.0.0',
     port: 8080,

@@ -1,5 +1,5 @@
 import {square} from './math'
-// import './css/style.css'
+import './css/style.css'
 
 function render () {
   var element = document.createElement('div')
