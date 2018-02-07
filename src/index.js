@@ -3,7 +3,7 @@ import {square} from './math'
 
 function render () {
   var element = document.createElement('div')
-  element.innerHTML = ['hello webpack', 'square(5) = ' + square(5)].join('\r\n')
+  element.innerHTML = ['hello webpack！', 'square(5) = ' + square(5)].join('\r\n')
   document.body.appendChild(element)
 }
 
